@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fareeha Shahzad - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #121212;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #1e1e1e;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        h1 {
+            text-align: center;
+            color: #00b894;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fd79a8;
+            margin-bottom: 20px;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0;}
+            to { transform: translateX(0); opacity: 1;}
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section h3 {
+            color: #00cec9;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #00cec9;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 12px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1.1rem;
+            color: #dfe6e9;
+        }
+
+        li::before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: #fd79a8;
+            font-weight: bold;
+        }
+
+        .interests p {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #b2bec3;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-badge {
+            background: linear-gradient(135deg, #6c5ce7, #00b894);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        }
+
+        .cv-button {
+            display: block;
+            width: 240px;
+            margin: 40px auto 0 auto;
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(135deg, #fd79a8, #00b894);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .cv-button:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #00b894, #fd79a8);
+        }
+
+        @media (max-width: 600px) {
+            .skills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fareeha Shahzad</h1>
+        <h2>Front-End Web Developer</h2>
+
+        <div class="section">
+            <h3>Education</h3>
+            <ul>
+                <li><strong>Workers Welfare School</strong> – School Education</li>
+                <li><strong>Punjab College (2021)</strong> – ICS</li>
+                <li><strong>University of Education (2023 – Present)</strong> – BSc Computer Science</li>
+            </ul>
+        </div>
+
+        <div class="section interests">
+            <h3>About Me & Interests</h3>
+            <p>
+                I am a passionate Front-End Web Developer who loves creating interactive, responsive, and visually appealing websites.  
+                Skilled in <strong>HTML, CSS, JavaScript, React.js</strong>, I enjoy solving problems, learning new technologies, and building modern web applications.  
+                My interests include UI/UX design, experimenting with web animations, and continuous skill development in web technologies.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Skills</h3>
+            <div class="skills">
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">Responsive Design</span>
+                <span class="skill-badge">UI/UX Basics</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Problem Solving</span>
+            </div>
+        </div>
+
+        <a class="cv-button" href="https://drive.google.com/file/d/1sbJ7bwsH59mf3lJRYtxaBcZvoqO0Xqh-/view?usp=drive_link" target="_blank">Download Resume</a>
+    </div>
+</body>
+</html>
