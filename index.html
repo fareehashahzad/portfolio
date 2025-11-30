@@ -1,325 +1,124 @@
-!<DOCTYPE html> <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fareeha developer portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <link rel="stylesheet" href="./assets//css/style.css" />
+  </head>
 
-        /* ------------------ GLOBAL ------------------ */
-        body {
-            background-color: rgb(1, 1, 32);
-            color: white;
-            overflow-x: hidden;
-        }
-
-        /* ------------------ NAVIGATION ------------------ */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: rgb(4, 4, 62);
-        }
-
-        nav ul {
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li {
-            list-style: none;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            color: rgb(87, 87, 192);
-        }
-
-        /* ------------------ HERO SECTION ------------------ */
-        .firstsection {
-            display: flex;
-            justify-content: space-between;
-            padding: 80px 40px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .leftsection {
-            font-size: 2.5rem;
-            max-width: 600px;
-        }
-
-        .rightsection img {
-            width: 350px;
-            max-width: 90%;
-        }
-
-        .purple,
-        #element {
-            color: rgb(74, 74, 155);
-        }
-
-        /* ------------------ EXPERIENCE SECTION ------------------ */
-        .second {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            height: 400px;
-        }
-
-        .second h1 {
-            font-size: 2rem;
-            margin-top: 10px;
-        }
-
-        .box {
-            width: 100%;
-            height: 2px;
-            background-color: white;
-            margin: 50px 0;
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            flex-wrap: wrap;
-        }
-
-        .vertical {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 180px;
-            margin-bottom: 80px;
-        }
-
-        .vertical-title {
-            margin-top: 20px;
-            font-size: 1rem;
-            text-align: center;
-        }
-
-        .vertical-dsc {
-            margin-top: 8px;
-            text-align: center;
-            color: gray;
-            font-size: 0.9rem;
-        }
-
-        .img-top {
-            width: 30px;
-            margin-bottom: -15px;
-        }
-
-        main hr {
-            border: 0;
-            background-color: rgb(74, 74, 155);
-            height: 1.2px;
-            margin: 60px 84px;
-        }
-
-        /* ------------------ FOOTER ------------------ */
-        footer {
-            background-color: #0e0e1a;
-            padding: 40px 50px;
-            margin-top: 100px;
-        }
-
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .footer-section {
-            min-width: 200px;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li a {
-            color: gray;
-            text-decoration: none;
-        }
-
-        .footer-section ul li a:hover {
-            color: white;
-        }
-
-        .copyright {
-            text-align: center;
-            margin-top: 20px;
-            color: gray;
-        }
-
-        /* --------------------------------------------------------- RESPONSIVE BREAKPOINTS --------------------------------------------------------- */
-        /* Large Tablets */
-        @media (max-width: 992px) {
-            .firstsection {
-                flex-direction: column;
-                text-align: center;
-                gap: 30px;
-            }
-
-            nav ul {
-                gap: 15px;
-            }
-        }
-
-        /* Tablets & Mobile Landscape */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .leftsection {
-                font-size: 2rem;
-            }
-
-            .second {
-                height: auto;
-            }
-
-            .box {
-                flex-direction: column;
-                align-items: center;
-                height: auto;
-                background-color: transparent;
-            }
-
-            .vertical {
-                width: 100%;
-                margin: 40px 0;
-            }
-        }
-
-        /* Mobile Phones */
-        @media (max-width: 480px) {
-            nav {
-                padding: 15px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .leftsection {
-                font-size: 1.8rem;
-            }
-
-            .rightsection img {
-                width: 250px;
-            }
-
-            .second {
-                height: auto;
-            }
-
-            footer {
-                padding: 30px 20px;
-            }
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="left">Fareeha's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li> <a href="/">Home</a></li>
-                    <li><a href="file:///C:/Users/lenovo/Desktop/portfolio/about.html">About</a></li>
-                    <li><a href="file:///C:/Users/lenovo/Desktop/portfolio/resume.html">Resume</a></li>
-                    <li><a href="file:///C:/Users/lenovo/Desktop/portfolio/project.html">Projects</a></li>
-                    <li><a href="file:///C:/Users/lenovo/Desktop/portfolio/contact.html">Contact me</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="left">Fareeha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a href="/project.html">Projects</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="firstsection">
-            <div class="leftsection">Hi,I’m<span class="purple"> Fareeha</span>
-                <div>and I am <div>Frontend </div>
-                </div> <span id="element"></span>
-            </div>
-            <div class="rightsection"> <img src="port.png"> </div>
-        </section>
-        <hr>
-        <div class="work">
-            <section class="second"> <span class="text-ray">What I have done so far</span>
-                <h1>Work Experiences</h1>
-                <div class="box">
-                    <div class="vertical"><img class="img-top" src="html.png">
-                        <div class="vertical-title"> HTML Developer (2023-2024) </div>
-                        <div class="vertical-dsc"> Creates responsive, user-friendly web pages with clean HTML5,
-                            converting designs into functional layouts while ensuring accessibility and performance.
-                        </div>
-                    </div>
-                    <div class="vertical"> <img class="img-top" src="css.png">
-                        <div class="vertical-title"> CSS developer(2024-2025)</div>
-                        <div class="vertical-dsc">Creates responsive and visually appealing web pages using CSS3,
-                            Flexbox, Grid, and animations, focusing on clean and maintainable styling.</div>
-                    </div>
-                    <div class="vertical"><img class="img-top" src="js1.png">
-                        <div class="vertical-title">JS developer(2025)</div>
-                        <div class="vertical-dsc">Builds dynamic and interactive web pages with clean JavaScript,
-                            enhancing user experience and functionality.</div>
-                    </div>
-                    <div class="vertical"><img class="img-top" src="front1.png">
-                        <div class="vertical-title">Frontend Developer(2025)</div>
-                        <div class="vertical-dsc">Focused on building dynamic, user-friendly, and mobile-responsive
-                            websites with modern frontend technologies.</div>
-                    </div>
-            </section>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi,I’m<span class="purple"> Fareeha</span>
+          <div>
+            and I am
+            <div>Frontend</div>
+          </div>
+          <span id="element"></span>
         </div>
+        <div class="rightsection">
+          <img src="/assets//images/port.png" />
+        </div>
+      </section>
+      <hr />
+      <div class="work">
+        <section class="second">
+          <span class="text-ray">What I have done so far</span>
+          <h1>Work Experiences</h1>
+          <div class="box">
+            <div class="vertical">
+              <img class="img-top" src="/assets/images/html.png" />
+              <div class="vertical-title">HTML Developer (2023-2024)</div>
+              <div class="vertical-dsc">
+                Creates responsive, user-friendly web pages with clean HTML5, converting designs
+                into functional layouts while ensuring accessibility and performance.
+              </div>
+            </div>
+            <div class="vertical">
+              <img class="img-top" src="/assets/images/css.png" />
+              <div class="vertical-title">CSS developer(2024-2025)</div>
+              <div class="vertical-dsc">
+                Creates responsive and visually appealing web pages using CSS3, Flexbox, Grid, and
+                animations, focusing on clean and maintainable styling.
+              </div>
+            </div>
+            <div class="vertical">
+              <img class="img-top" src="/assets/images/js1.png" />
+              <div class="vertical-title">JS developer(2025)</div>
+              <div class="vertical-dsc">
+                Builds dynamic and interactive web pages with clean JavaScript, enhancing user
+                experience and functionality.
+              </div>
+            </div>
+            <div class="vertical">
+              <img class="img-top" src="/assets/images/front1.png" />
+              <div class="vertical-title">Frontend Developer(2025)</div>
+
+              <div class="vertical-dsc">
+                Focused on building dynamic, user-friendly, and mobile-responsive websites with
+                modern frontend technologies.
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-section">
-                <h3>Fareeha's Developer Portfolio</h3>
-                <p>Crafting responsive and modern web experiences with passion.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>📞 03314530776</p>
-                <p>📧 farehashahzad120@gmail.com</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="https://pak-doctors.netlify.app/">Projects</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="https://github.com/fareehashahzad" target="_blank">GitHub Profile</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
+      <div class="footer">
+        <div class="footer-section">
+          <h3>Fareeha's Developer Portfolio</h3>
+          <p>Crafting responsive and modern web experiences with passion.</p>
         </div>
-        <div class="copyright"> © 2025 Fareeha's Developer Portfolio | All Rights Reserved. </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📞 03314530776</p>
+          <p>📧 farehashahzad120@gmail.com</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://pak-doctors.netlify.app/">Projects</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="https://github.com/fareehashahzad" target="_blank">GitHub Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">© 2025 Fareeha's Developer Portfolio | All Rights Reserved.</div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script> var typed = new Typed('#element', { strings: ['<i>Web Developer</i> ', 'Web Designer.'], typeSpeed: 50, }); </script>
-</body>
-
+    <script>
+      var typed = new Typed('#element', {
+          strings: ['<i>Web Developer</i> ', 'Web Designer.'],
+          typeSpeed: 50,
+      });
+    </script>
+  </body>
 </html>
