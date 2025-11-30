@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fareeha Shahzad - Contact Me</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: rgb(1,1,32); 
+        color: white;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px 30px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(74,74,155);
+        font-size: 3rem;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+        animation: slideIn 1s ease-in-out;
+    }
+
+    h1::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 4px;
+        background: linear-gradient(135deg, rgb(74,74,155), rgb(87,87,192));
+        margin: 10px auto 0 auto;
+        border-radius: 2px;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(87,87,192); 
+        margin-bottom: 40px;
+        font-weight: 400;
+    }
+
+    @keyframes slideIn {
+        from { transform: translateY(-20px); opacity: 0;}
+        to { transform: translateY(0); opacity: 1;}
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .contact-card {
+        background: rgb(4,4,62);
+        padding: 20px 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    }
+
+    .contact-card p {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #dfe6e9;
+    }
+
+    .contact-card a {
+        color: rgb(87,87,192);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .contact-card a:hover {
+        color: rgb(74,74,155);
+        text-decoration: underline;
+    }
+
+    .map {
+        width: 100%;
+        height: 450px;
+        border: 3px solid rgb(74,74,155);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        transition: transform 0.3s;
+    }
+
+    .map:hover {
+        transform: scale(1.02);
+    }
+
+    @media(max-width: 600px){
+        .map {
+            height: 300px;
+        }
+
+        .contact-card {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <h2>I'd love to hear from you!</h2>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <p>📞 Phone: <a href="tel:03314530776">03314530776</a></p>
+            </div>
+            <div class="contact-card">
+                <p>📧 Email: <a href="mailto:farehashahzad120@gmail.com">farehashahzad120@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <p>📍 Location: Nishtar Colony, Lahore</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <!-- Google Maps Embed for Nishtar Colony, Lahore -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.123456!2d74.3685312!3d31.420388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919054b5cf0d6ed%3A0x8fa3d1d35df83!2sNishtar%20Colony%2C%20Lahore!5e0!3m2!1sen!2s!4v1700000000000" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
+
