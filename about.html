@@ -19,6 +19,31 @@
           margin: 0;
           padding: 0;
       }
+      nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(4, 4, 62);
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(87, 87, 192);
+}
 
       .about-section {
           max-width: 900px;
@@ -78,6 +103,20 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <div class="left">Fareeha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/about.html">About</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/resume.html">Resume</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/project.html">Projects</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/contact.html">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="about-section">
       <h1>Hi, I'm <span style="color:#ffcc00;">Fareeha Shahzad</span></h1>
       <h3>Front-End Web Developer</h3>

@@ -9,140 +9,168 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
       body {
-          margin: 0;
-          font-family: 'Roboto', sans-serif;
-          background: #121212;
-          color: #fff;
+        background-color: rgb(1, 1, 32);
+        color: white;
+        overflow-x: hidden;
       }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(4, 4, 62);
+}
 
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(87, 87, 192);
+}
       .container {
-          max-width: 900px;
-          margin: 50px auto;
-          background: #1e1e1e;
-          padding: 50px;
-          border-radius: 20px;
-          box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-          animation: fadeIn 1.5s ease-in-out;
-      }
-
-      @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px);}
-          to { opacity: 1; transform: translateY(0);}
+        max-width: 900px;
+        margin: 50px auto;
+        background-color: rgb(4, 4, 62);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
       }
 
       h1 {
-          text-align: center;
-          color: #00b894;
-          font-size: 3rem;
-          margin-bottom: 10px;
-          animation: slideIn 1s ease-in-out;
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(87, 87, 192);
       }
 
       h2 {
-          text-align: center;
-          color: #fd79a8;
-          margin-bottom: 20px;
-      }
-
-      @keyframes slideIn {
-          from { transform: translateX(-50px); opacity: 0;}
-          to { transform: translateX(0); opacity: 1;}
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(146, 146, 230);
       }
 
       .section {
-          margin: 40px 0;
+        margin: 40px 0;
       }
 
       .section h3 {
-          color: #00cec9;
-          margin-bottom: 15px;
-          font-size: 1.5rem;
-          border-bottom: 2px solid #00cec9;
-          display: inline-block;
-          padding-bottom: 5px;
+        color: rgb(74, 74, 155);
+        font-size: 1.6rem;
+        border-bottom: 2px solid rgb(74, 74, 155);
+        padding-bottom: 5px;
+        display: inline-block;
       }
 
       ul {
-          list-style-type: none;
-          padding: 0;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
       }
 
       li {
-          margin: 12px 0;
-          padding-left: 25px;
-          position: relative;
-          font-size: 1.1rem;
-          color: #dfe6e9;
+        margin: 15px 0;
+        font-size: 1.1rem;
+        color: rgb(200, 200, 230);
+        padding-left: 20px;
+        position: relative;
       }
 
       li::before {
-          content: "★";
-          position: absolute;
-          left: 0;
-          color: #fd79a8;
-          font-weight: bold;
+        content: "■";
+        position: absolute;
+        left: 0;
+        color: rgb(87, 87, 192);
       }
 
       .interests p {
-          text-align: center;
-          font-size: 1.1rem;
-          line-height: 1.6;
-          color: #b2bec3;
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: rgb(180, 180, 220);
+        line-height: 1.6;
       }
 
       .skills {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 15px;
-          margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
       }
 
       .skill-badge {
-          background: linear-gradient(135deg, #6c5ce7, #00b894);
-          color: white;
-          padding: 12px 20px;
-          border-radius: 30px;
-          font-weight: bold;
-          font-size: 1rem;
-          transition: transform 0.3s, box-shadow 0.3s;
+        background-color: rgb(74, 74, 155);
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+        transition: 0.3s;
       }
 
       .skill-badge:hover {
-          transform: scale(1.1);
-          box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        background-color: rgb(120, 120, 210);
+        transform: scale(1.1);
       }
 
       .cv-button {
-          display: block;
-          width: 240px;
-          margin: 40px auto 0 auto;
-          padding: 15px;
-          text-align: center;
-          background: linear-gradient(135deg, #fd79a8, #00b894);
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 1.1rem;
-          border-radius: 12px;
-          box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-          transition: transform 0.3s, background 0.3s;
+        display: block;
+        width: 240px;
+        margin: 40px auto 0 auto;
+        padding: 15px;
+        text-align: center;
+        background-color: rgb(74, 74, 155);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 12px;
+        transition: 0.3s;
       }
 
       .cv-button:hover {
-          transform: translateY(-3px);
-          background: linear-gradient(135deg, #00b894, #fd79a8);
+        background-color: rgb(120, 120, 210);
+        transform: translateY(-3px);
       }
 
       @media (max-width: 600px) {
-          .skills {
-              flex-direction: column;
-          }
+        .skills {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="left">Fareeha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/about.html">About</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/resume.html">Resume</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/project.html">Projects</a></li>
+            <li><a href="file:///C:/Users/lenovo/Desktop/new/portfolio/contact.html">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="container">
       <h1>Fareeha Shahzad</h1>
       <h2>Front-End Web Developer</h2>
@@ -181,9 +209,7 @@
         </div>
       </div>
 
-      <a class="cv-button" href="/assets/Fareeha Shahzad - Resume.pdf" download=""
-        >Download Resume</a
-      >
+      <a class="cv-button" href="https://drive.google.com/file/d/15KzKXE4iQS21ekzUjqZnn_DxPfIpc0Aa/view?usp=drive_link">Download Resume</a>
     </div>
   </body>
 </html>
